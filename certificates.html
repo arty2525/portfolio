@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="คลังเกียรติบัตรและหลักฐานการพัฒนาวิชาชีพของนายศิวัสว์ โตนอก">
+  <meta name="theme-color" content="#07111f">
+  <title>เกียรติบัตร | นายศิวัสว์ โตนอก</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <header class="site-header scrolled" id="top">
+    <nav class="nav container" aria-label="เมนูหลัก">
+      <a class="brand" href="index.html" aria-label="กลับสู่หน้าแรก">
+        <span class="brand-mark">ST</span>
+        <span class="brand-copy"><strong>SIWAT</strong><small>TECH EDUCATOR</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="เปิดเมนู" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html#about">เกี่ยวกับฉัน</a>
+        <a href="index.html#expertise">ความเชี่ยวชาญ</a>
+        <a href="index.html#teaching">รายวิชาที่สอน</a>
+        <a href="index.html#portfolio">ผลงาน</a>
+        <a class="nav-cta" href="index.html#contact">ติดต่อ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="subpage-main">
+    <section class="subpage-hero">
+      <div class="container reveal">
+        <p class="section-index">CERTIFICATES & ACHIEVEMENTS</p>
+        <h1>เส้นทางการเรียนรู้<br><span class="gradient-text">และพัฒนาวิชาชีพ</span></h1>
+        <p>รวบรวมเกียรติบัตรจากการอบรม การเป็นวิทยากร การปฏิบัติหน้าที่กรรมการ กิจกรรมการแข่งขัน และผลงานด้านการศึกษา จำนวน 108 รายการ</p>
+        <div class="subpage-actions">
+          <a class="button primary" href="#gallery">ชมเกียรติบัตร <span>↓</span></a>
+          <a class="button ghost" href="https://drive.google.com/drive/folders/1dTC68rUd45oH1gziEFJ76FqKwhKURlHz" target="_blank" rel="noopener">ดูไฟล์ต้นฉบับใน Google Drive</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificate-gallery-section section" id="gallery">
+      <div class="container">
+        <div class="gallery-toolbar">
+          <div><p class="section-index">ALL CERTIFICATES</p><h2>คลังเกียรติบัตร</h2></div>
+          <p class="gallery-count"><strong>108</strong> รายการ · กดที่ภาพเพื่อขยาย</p>
+        </div>
+        <div class="certificate-grid" id="certificate-grid" aria-live="polite"></div>
+        <div class="load-more-wrap"><button class="button ghost" id="load-more" type="button">แสดงเพิ่มเติม</button></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="certificate-modal" id="certificate-modal" role="dialog" aria-modal="true" aria-label="ภาพเกียรติบัตร">
+    <button class="modal-close" type="button" aria-label="ปิดภาพ">×</button>
+    <img src="" alt="">
+    <span class="modal-caption"></span>
+  </div>
+
+  <footer>
+    <div class="container footer-content"><div><strong>SIWAT TONOK</strong><span>Technology Teacher Portfolio</span></div><p>© <span id="year"></span> Siwat Tonok. All rights reserved.</p><a href="#top" aria-label="กลับสู่ด้านบน">↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="certificates.js"></script>
+</body>
+</html>
