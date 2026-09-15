@@ -6,10 +6,11 @@ const loadMoreButton = document.getElementById('load-more');
 const certificateModal = document.getElementById('certificate-modal');
 const modalImage = certificateModal.querySelector('img');
 const modalCaption = certificateModal.querySelector('.modal-caption');
+const certificateAssetVersion = '20260915-2';
 let visibleCertificates = initiallyVisible;
 
 const certificatePath = number =>
-  `assets/certificates/cert-${String(number).padStart(3, '0')}.webp`;
+  `assets/certificates/cert-${String(number).padStart(3, '0')}.webp?v=${certificateAssetVersion}`;
 
 for (let number = 1; number <= totalCertificates; number += 1) {
   const code = String(number).padStart(3, '0');
