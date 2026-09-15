@@ -25,3 +25,27 @@ const revealObserver = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
 document.getElementById('year').textContent = new Date().getFullYear();
+
+const activityModal = document.querySelector('.activity-modal');
+if (activityModal) {
+  const modalImage = activityModal.querySelector('img');
+  const modalCaption = activityModal.querySelector('.modal-caption');
+  const closeModal = () => {
+    activityModal.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  document.querySelectorAll('.activity-card').forEach((card, index) => card.addEventListener('click', () => {
+    modalImage.src = card.querySelector('img').src;
+    modalImage.alt = card.querySelector('img').alt;
+    modalCaption.textContent = `ภาพกิจกรรม ${index + 1} จาก 28`;
+    activityModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }));
+  activityModal.querySelector('.modal-close').addEventListener('click', closeModal);
+  activityModal.addEventListener('click', event => {
+    if (event.target === activityModal) closeModal();
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeModal();
+  });
+}
