@@ -2,16 +2,19 @@
 
 เว็บไซต์ Portfolio ของนายศิวัสว์ โตนอก ออกแบบสำหรับเผยแพร่ด้วย GitHub Pages
 
-## วิธีเผยแพร่ที่ `arty2525.github.io/portfolio`
+## เว็บไซต์
 
-1. เข้าสู่ GitHub แล้วสร้าง Repository ใหม่ชื่อ `portfolio`
-2. ตั้งค่า Repository เป็น **Public** และกด **Create repository**
-3. กด **uploading an existing file**
-4. อัปโหลดไฟล์และโฟลเดอร์ทั้งหมดที่อยู่ภายในโฟลเดอร์ `portfolio` นี้ โดยต้องให้ `index.html` อยู่ที่หน้าหลักของ Repository
-5. ไปที่ **Settings → Pages**
-6. ใต้หัวข้อ **Build and deployment** เลือก Source เป็น **Deploy from a branch**
-7. เลือก Branch เป็น **main** และ Folder เป็น **/(root)** แล้วกด **Save**
-8. รอประมาณ 1–5 นาที แล้วเปิด `https://arty2525.github.io/portfolio/`
+- Portfolio: https://arty2525.github.io/portfolio/
+- คลังเกียรติบัตร: https://arty2525.github.io/portfolio/certificates.html
+
+เว็บไซต์เผยแพร่ด้วย GitHub Pages จาก Branch `main` และโฟลเดอร์ `/(root)`
+
+## เนื้อหาปัจจุบัน
+
+- ประวัติและความเชี่ยวชาญ
+- รายวิชาที่สอน
+- พื้นที่แสดงโครงงานและนวัตกรรม
+- คลังเกียรติบัตร 108 รายการ พร้อมภาพย่อและระบบขยายภาพ
 
 ## การเพิ่มผลงานภายหลัง
 
