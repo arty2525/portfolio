@@ -1,4 +1,4 @@
-const totalCertificates = 108;
+const totalCertificates = 109;
 const initiallyVisible = 18;
 const loadStep = 18;
 const certificateGrid = document.getElementById('certificate-grid');
@@ -6,7 +6,7 @@ const loadMoreButton = document.getElementById('load-more');
 const certificateModal = document.getElementById('certificate-modal');
 const modalImage = certificateModal.querySelector('img');
 const modalCaption = certificateModal.querySelector('.modal-caption');
-const certificateAssetVersion = '20260915-2';
+const certificateAssetVersion = '20260916-1';
 let visibleCertificates = initiallyVisible;
 
 const certificatePath = number =>
