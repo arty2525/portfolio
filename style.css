@@ -256,3 +256,205 @@ footer{background:#07090c}
   .biography-hero{padding:72px 0 54px}
   .biography-hero h1{font-size:58px}
 }
+
+/* Architectural Minimal — selected visual direction */
+:root{
+  --bg:#f4f1eb;
+  --bg-soft:#ebe7df;
+  --panel:#faf8f3;
+  --text:#161616;
+  --muted:#6f6b64;
+  --cyan:#721b21;
+  --blue:#a7894e;
+  --line:rgba(24,24,24,.16);
+  --max:1280px;
+}
+html{background:#f4f1eb}
+body{background:#f4f1eb;color:#161616;font-weight:300}
+body:before{background:linear-gradient(90deg,transparent 49.94%,rgba(20,20,20,.025) 50%,transparent 50.06%)}
+.page-noise{opacity:.016;mix-blend-mode:multiply}
+.gradient-text{color:#721b21;background:none}
+
+.site-header,.site-header.scrolled{background:rgba(244,241,235,.94);border-bottom:1px solid rgba(20,20,20,.16);box-shadow:none;backdrop-filter:blur(18px)}
+.brand-mark{color:#161616}
+.brand-mark:after{color:#a7894e}
+.brand-copy strong{color:#161616}
+.brand-copy small{color:#777169}
+.nav-links a{color:#4f4b46}
+.nav-links a:hover,.nav-links a.active{color:#721b21}
+.nav-links a:not(.nav-cta):after{background:#721b21}
+.nav-cta{border-color:#721b21;color:#721b21!important}
+.menu-toggle span{background:#181818}
+
+.hero{min-height:900px;padding:132px 0 70px;background:linear-gradient(90deg,transparent calc(58% - 1px),rgba(20,20,20,.12) 58%,transparent calc(58% + 1px));border-bottom:1px solid rgba(20,20,20,.18)}
+.hero-grid{opacity:.14;background-image:linear-gradient(rgba(20,20,20,.11) 1px,transparent 1px),linear-gradient(90deg,rgba(20,20,20,.08) 1px,transparent 1px);background-size:96px 96px;mask-image:linear-gradient(to bottom,#000,transparent 96%)}
+.hero:after{content:"01  /  KNOWLEDGE · PEOPLE · INNOVATION";color:#8d7545;writing-mode:vertical-rl;letter-spacing:.28em}
+.hero-layout{grid-template-columns:minmax(0,.88fr) minmax(440px,1.12fr);gap:56px}
+.hero-copy{padding:68px 0;align-self:center}
+.eyebrow{color:#721b21;margin-bottom:36px}
+.eyebrow span{background:#a7894e}
+.hero h1{color:#161616;font-size:clamp(86px,9.8vw,142px);line-height:.82;text-shadow:none;margin-bottom:44px}
+.hero h1 .gradient-text{color:#721b21}
+.hero-name{color:#24211e;font-size:clamp(20px,2vw,28px)}
+.hero-name span{color:#7b756d}
+.hero-intro{color:#514c46;max-width:540px}
+.hero-intro:before{background:#a7894e}
+.button.primary{background:#721b21;color:#fff}
+.button.primary:hover{background:#541116;color:#fff}
+.button.ghost{border-color:rgba(20,20,20,.25);color:#282522;background:transparent}
+.button.ghost:hover{border-color:#721b21;color:#721b21}
+.hero-tags{border-color:rgba(20,20,20,.18)}
+.hero-tags span{color:#68625c;border-color:rgba(20,20,20,.14)}
+.portrait-wrap{min-height:650px;border:0;border-left:1px solid rgba(20,20,20,.14);padding:0 0 0 56px}
+.portrait-frame{background:#d9d5cd;clip-path:polygon(11% 0,100% 0,100% 100%,0 100%,0 13%)}
+.portrait-frame img{filter:grayscale(1) contrast(1.08) brightness(.96);object-position:54% center}
+.portrait-frame:after{background:linear-gradient(135deg,rgba(114,27,33,.2),transparent 35%),linear-gradient(0deg,rgba(13,13,13,.2),transparent 36%)}
+.portrait-wrap:before{content:"EDUCATION\A TECHNOLOGY\A ENGINEERING";right:24px;top:38px;color:#f4f1eb;text-shadow:0 1px 12px rgba(0,0,0,.45)}
+.floating-card{display:none}
+
+.section-index{color:#721b21}
+h1,h2{color:#171717}
+.about{background:#f4f1eb}
+.about-layout{position:relative}
+.about-layout:before{content:"01";position:absolute;right:0;top:-30px;color:#a7894e;font:500 80px "Noto Serif Thai",serif;opacity:.72}
+.about-content .lead{color:#25221f}
+.about-content>p:not(.lead),.section-heading.horizontal>p{color:#68635d}
+.info-grid,.info-grid div,.article-entry-link{border-color:rgba(20,20,20,.16)}
+.info-grid span,.contact-links span{color:#767069}
+.info-grid strong{color:#282522}
+.article-entry-link span{color:#171717}
+.article-entry-link small{color:#746f68}
+.article-entry-link i{color:#721b21}
+
+.expertise,.portfolio,.achievement-section{background:#ebe7df}
+.section-heading.horizontal{border-color:rgba(20,20,20,.17)}
+.skill-grid{background:rgba(20,20,20,.18);border-color:rgba(20,20,20,.18)}
+.skill-card,.skill-card.featured{background:#f4f1eb;border-color:rgba(20,20,20,.18)}
+.skill-card:hover{background:#faf8f3}
+.skill-number{color:#a7894e}
+.skill-symbol{color:#721b21}
+.skill-card h3{color:#181818}
+.skill-card p{color:#68635d}
+.skill-list span{color:#756f68;border-color:rgba(20,20,20,.16)}
+
+.teaching{background:#f7f4ee}
+.course-list,.course{border-color:rgba(20,20,20,.17)}
+.course:before{color:#a7894e}
+.course h3{color:#181818}
+.course p{color:#6d6861}
+.course-arrow{color:#721b21}
+.course:hover{background:linear-gradient(90deg,rgba(114,27,33,.05),transparent 56%)}
+
+.placeholder-grid{background:rgba(20,20,20,.2);border-color:rgba(20,20,20,.2)}
+.project-placeholder{background:#f7f4ee}
+.placeholder-visual{background:#dad5cc}
+.placeholder-visual img{filter:grayscale(.72) contrast(1.06) brightness(.88)!important}
+.project-placeholder:hover .placeholder-visual img{filter:grayscale(.25) contrast(1.03) brightness(.94)!important}
+.placeholder-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(114,27,33,.08),transparent 45%);pointer-events:none}
+.placeholder-visual>span{color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.65)}
+.project-meta>span{color:#721b21}
+.project-meta h3{color:#181818}
+.project-meta p{color:#6c665f}
+
+.cert-preview{background:#f4f1eb}
+.cert-preview-grid{background:rgba(20,20,20,.18);border-color:rgba(20,20,20,.18)}
+.cert-preview-card{background:#faf8f3}
+.cert-preview-card:hover{background:#fff}
+.cert-preview-card img{filter:grayscale(.45) contrast(1.02);background:#fff}
+.cert-preview-card:hover img{filter:grayscale(0)}
+.cert-preview-card span{color:#4f4a44}
+
+.contact{background:#ebe7df}
+.contact-card{background:linear-gradient(135deg,rgba(114,27,33,.045),transparent 50%),#f7f4ee;border-color:rgba(114,27,33,.3)}
+.contact-copy p:last-child{color:#69635d}
+.contact-links,.contact-links a,.location{border-color:rgba(20,20,20,.16)}
+.contact-links strong{color:#22201d}
+.contact-links i{color:#721b21}
+footer{background:#181818;border-color:#181818;color:#aaa49b}
+.footer-content strong{color:#f1ece3}
+.footer-content a{border-color:rgba(255,255,255,.22);color:#d2b97f}
+
+.subpage-main{background:#f4f1eb}
+.subpage-hero{background:linear-gradient(90deg,transparent 70%,rgba(114,27,33,.045) 70%),#f4f1eb;border-color:rgba(20,20,20,.18)}
+.subpage-hero:before{content:"";position:absolute;right:10%;top:0;width:1px;height:100%;background:rgba(20,20,20,.14)}
+.subpage-hero:after{color:rgba(114,27,33,.045)}
+.subpage-hero h1{color:#181818}
+.subpage-hero p{color:#656059}
+.achievement-grid{background:rgba(20,20,20,.2);border-color:rgba(20,20,20,.2)}
+.achievement-card,.featured-achievement{background:#f7f4ee}
+.achievement-card:hover{background:#fff}
+.achievement-year,.achievement-kicker{color:#721b21}
+.achievement-card h3{color:#181818}
+.achievement-card>p:last-child{color:#67615a}
+.activity-section{background:#f4f1eb}
+.activity-grid{background:rgba(20,20,20,.2);border-color:rgba(20,20,20,.2)}
+.activity-card{background:#ded9d0}
+.activity-card img{filter:grayscale(.62) contrast(1.04)}
+.activity-card:hover img{filter:grayscale(.1) brightness(.82)}
+
+.certificate-gallery-section{background:#f4f1eb}
+.gallery-count{color:#6e6861}
+.gallery-count strong{color:#721b21}
+.certificate-category-nav{background:rgba(20,20,20,.18);border-color:rgba(20,20,20,.18)}
+.certificate-category-nav a{background:#f7f4ee}
+.certificate-category-nav a:hover{background:#fff}
+.certificate-category-nav span{color:#721b21}
+.certificate-category-nav strong{color:#171717}
+.certificate-category-nav small{color:#777069}
+.certificate-category+.certificate-category{border-color:rgba(20,20,20,.18)}
+.certificate-category-heading h3{color:#181818}
+.certificate-category-heading>p{color:#6f6962}
+.certificate-category-heading>p strong{color:#721b21}
+.certificate-grid{background:rgba(20,20,20,.18);border-color:rgba(20,20,20,.18)}
+.certificate-card{background:#faf8f3}
+.certificate-card:hover{background:#fff}
+.certificate-card img{filter:grayscale(.42);background:#fff}
+.certificate-card:hover img{filter:grayscale(0)}
+.certificate-card span{color:#6c665f}
+.certificate-card span i{color:#721b21}
+.load-more-wrap .button{color:#721b21;border-color:rgba(114,27,33,.35)}
+.certificate-modal,.activity-modal{background:rgba(20,18,16,.95)}
+.modal-close{background:#f4f1eb;color:#721b21;border-color:#f4f1eb}
+
+.biography-main{background:#f4f1eb}
+.biography-hero{background:linear-gradient(90deg,transparent 68%,rgba(114,27,33,.05) 68%),#f4f1eb;border-color:rgba(20,20,20,.18)}
+.biography-hero h1{color:#181818}
+.biography-deck{color:#4f4a44}
+.source-status{color:#756f68}
+.source-status span{background:#721b21;box-shadow:0 0 0 5px rgba(114,27,33,.08)}
+.article-toc>p{color:#721b21}
+.article-toc ol,.encyclopedia-article section{border-color:rgba(20,20,20,.17)}
+.article-toc a{color:#6f6962}
+.article-toc a:hover{color:#721b21;border-color:#721b21}
+.encyclopedia-article h2,.encyclopedia-article h3{color:#1e1c1a}
+.encyclopedia-article p{color:#5f5a54}
+.encyclopedia-article .article-lead{color:#2c2926}
+.encyclopedia-article sup a,.reference-list a{color:#721b21}
+.verification-panel{background:linear-gradient(135deg,rgba(114,27,33,.045),transparent 55%),#ebe7df!important;border-color:rgba(114,27,33,.28)!important}
+.reference-list li{color:#66605a}
+.reference-date{color:#7b756d!important;border-color:rgba(20,20,20,.16)}
+.biography-infobox{background:#ebe7df;border-color:rgba(20,20,20,.18)}
+.biography-infobox img{filter:grayscale(1) contrast(1.06) brightness(.98)}
+.biography-infobox h2{color:#181818}
+.infobox-english{color:#721b21}
+.biography-infobox dl,.biography-infobox dl div{border-color:rgba(20,20,20,.16)}
+.biography-infobox dt{color:#787169}
+.biography-infobox dd{color:#332f2b}
+.biography-infobox .button{color:#721b21}
+
+@media(max-width:900px){
+  .nav-links{background:#f4f1eb;border-color:rgba(20,20,20,.18)}
+  .hero{background:#f4f1eb}
+  .hero-layout{grid-template-columns:1fr}
+  .portrait-wrap{padding:0;min-height:650px;border:1px solid rgba(20,20,20,.17)}
+}
+@media(max-width:620px){
+  .hero{background:#f4f1eb}
+  .hero h1{font-size:clamp(66px,23vw,94px)}
+  .portrait-wrap{min-height:500px}
+  .portrait-frame{clip-path:polygon(10% 0,100% 0,100% 100%,0 100%,0 10%)}
+  .about-layout:before{font-size:54px;top:-22px}
+  .subpage-hero{background:#f4f1eb}
+  .subpage-hero:before{display:none}
+  .biography-hero{background:#f4f1eb}
+}
