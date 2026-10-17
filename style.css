@@ -41,3 +41,218 @@ body{background:#0d0e0d;color:var(--text);font-weight:300;letter-spacing:.005em}
 .biography-infobox{position:sticky;top:112px;border:1px solid rgba(218,202,164,.16);background:#161713}.biography-infobox img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:54% center;filter:saturate(.82)}.biography-infobox h2{padding:22px 22px 0;font-size:25px}.infobox-english{padding:0 22px 17px;color:var(--cyan);font-size:12px;letter-spacing:.09em}.biography-infobox dl{border-top:1px solid var(--line)}.biography-infobox dl div{padding:14px 22px;border-bottom:1px solid var(--line)}.biography-infobox dt{margin-bottom:4px;color:#858178;font-size:11px}.biography-infobox dd{color:#d5cfc3;font-size:13px;line-height:1.55}.biography-infobox .button{width:calc(100% - 44px);margin:22px;font-size:13px}
 @media(max-width:1050px){.encyclopedia-layout{grid-template-columns:130px minmax(0,1fr);gap:38px}.biography-infobox{position:relative;top:auto;grid-column:1;grid-row:1;margin-bottom:25px}.article-toc{grid-column:1;grid-row:2}.encyclopedia-article{grid-column:2;grid-row:1 / span 2}}
 @media(max-width:720px){.biography-hero{padding:62px 0 50px}.biography-hero h1{font-size:50px}.biography-deck{font-size:18px}.encyclopedia-layout{display:flex;flex-direction:column;padding-top:38px;padding-bottom:78px}.biography-infobox{order:1;width:100%;display:grid;grid-template-columns:120px 1fr;align-items:start}.biography-infobox img{grid-row:1 / span 4;height:100%;aspect-ratio:auto}.biography-infobox h2{padding:18px 18px 0;font-size:22px}.infobox-english{padding:0 18px 12px}.biography-infobox dl{grid-column:2}.biography-infobox dl div{padding:10px 18px}.biography-infobox .button{grid-column:1 / -1;width:auto;margin:14px}.article-toc{position:relative;top:auto;order:2;width:100%;padding:18px;border:1px solid var(--line)}.article-toc ol{columns:2}.encyclopedia-article{order:3}.encyclopedia-article .article-lead{font-size:17px}.verification-panel{padding:22px!important}}
+
+/* Midnight Gallery — selected visual direction */
+:root{
+  --bg:#080b0f;
+  --bg-soft:#0c1015;
+  --panel:#10151b;
+  --text:#f2eee5;
+  --muted:#96938b;
+  --cyan:#c9a968;
+  --blue:#8b6d38;
+  --line:rgba(214,188,126,.18);
+  --max:1280px;
+  --radius:0;
+}
+body{background:var(--bg);color:var(--text);font-weight:300}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 78% 12%,rgba(108,77,30,.13),transparent 30%),linear-gradient(115deg,rgba(255,255,255,.018),transparent 40%)}
+.page-noise{opacity:.027;mix-blend-mode:soft-light}
+.container{width:min(calc(100% - 72px),var(--max))}
+.section{padding:132px 0}
+
+.site-header{background:linear-gradient(180deg,rgba(8,11,15,.96),rgba(8,11,15,.78));border-bottom:1px solid rgba(214,188,126,.1);backdrop-filter:blur(22px)}
+.site-header.scrolled{background:rgba(8,11,15,.94);box-shadow:0 18px 55px rgba(0,0,0,.3)}
+.nav{height:86px}
+.brand{gap:15px}
+.brand-mark{border:0;width:auto;height:auto;color:#e3c98f;font:500 26px "Noto Serif Thai",serif;letter-spacing:-.06em}
+.brand-mark:after{content:"/";margin-left:13px;color:rgba(201,169,104,.45);font-weight:300}
+.brand-copy strong{font-family:"Noto Serif Thai",serif;font-weight:500;letter-spacing:.14em}
+.brand-copy small{letter-spacing:.26em;color:#77766f}
+.nav-links{gap:27px}
+.nav-links a{position:relative;color:#9e9b93;font-size:12px;letter-spacing:.04em}
+.nav-links a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;bottom:-12px;height:1px;background:#c9a968;transition:.3s}
+.nav-links a:hover:after,.nav-links a.active:after{right:0}
+.nav-cta{border:1px solid rgba(201,169,104,.32);padding:10px 18px;border-radius:0;color:#d8c494!important}
+
+.hero{min-height:940px;padding:132px 0 70px;border-bottom:1px solid var(--line);isolation:isolate}
+.hero-grid{opacity:.032;background-size:110px 110px;mask-image:linear-gradient(to bottom,#000,transparent 90%)}
+.hero:after{content:"TEACHER  /  CREATOR  /  LIFELONG LEARNER";position:absolute;right:4.5%;top:120px;z-index:2;color:#bda878;font-size:9px;letter-spacing:.35em;writing-mode:vertical-rl}
+.orb{display:none}
+.hero-layout{grid-template-columns:minmax(0,1.12fr) minmax(380px,.88fr);gap:0;align-items:stretch}
+.hero-copy{position:relative;z-index:2;padding:76px 70px 70px 0;align-self:center}
+.eyebrow{margin-bottom:34px;font-size:10px;letter-spacing:.32em;color:#d2b571}
+.eyebrow span{width:56px;background:#c9a968}
+.hero h1{font-size:clamp(80px,9.4vw,138px);font-weight:500;line-height:.83;letter-spacing:-.07em;margin:0 0 38px;color:#f2e8d2;text-shadow:0 8px 35px rgba(0,0,0,.32)}
+.hero h1 .gradient-text{display:inline-block;color:#e1c37f;background:none}
+.hero-name{font:400 clamp(19px,2vw,28px) "Noto Serif Thai",serif;margin-bottom:24px;color:#eee7da}
+.hero-name span{display:block;margin:7px 0 0;color:#9f947f;font:400 10px "IBM Plex Sans Thai",sans-serif;letter-spacing:.25em;text-transform:uppercase}
+.hero-intro{position:relative;max-width:580px;padding:24px 0 0;color:#b8b1a5;font:400 clamp(17px,1.6vw,22px) "Noto Serif Thai",serif;line-height:1.8}
+.hero-intro:before{content:"";position:absolute;left:0;top:0;width:76px;height:1px;background:#c9a968}
+.hero-actions{margin:38px 0 34px}
+.button{border-radius:0;padding:14px 24px;font-weight:400;letter-spacing:.04em}
+.button.primary{background:#c9a968;color:#090b0e}
+.button.primary:hover{background:#e1c37f;transform:translateY(-2px)}
+.button.ghost{border-color:rgba(214,188,126,.24);color:#cdc7bb}
+.hero-tags{gap:0;border-top:1px solid rgba(214,188,126,.17);padding-top:20px}
+.hero-tags span{border:0;border-right:1px solid rgba(214,188,126,.15);padding:2px 18px;border-radius:0;color:#89867f;font-size:9px;letter-spacing:.24em}
+.hero-tags span:first-child{padding-left:0}
+.portrait-wrap{width:100%;height:100%;min-height:690px;align-self:stretch;justify-self:stretch;border-left:1px solid rgba(214,188,126,.15)}
+.portrait-frame{height:100%;border:0;border-radius:0;box-shadow:none;background:#090c10}
+.portrait-frame img{height:100%;aspect-ratio:auto;object-fit:cover;object-position:55% center;filter:saturate(.72) contrast(1.05) brightness(.78)}
+.portrait-frame:after{background:linear-gradient(90deg,rgba(8,11,15,.38),transparent 35%),linear-gradient(0deg,rgba(8,11,15,.46),transparent 42%)}
+.portrait-wrap:before{content:"BUILD\A LEARN\A TEACH\A INSPIRE";white-space:pre;position:absolute;z-index:2;right:28px;top:44px;color:#d1c3a5;font-size:9px;line-height:3;letter-spacing:.3em;text-align:right}
+.floating-card{border-radius:0;background:rgba(8,11,15,.86);border:1px solid rgba(214,188,126,.17);box-shadow:0 20px 60px rgba(0,0,0,.38);padding:13px 17px}
+.card-top{top:auto;right:22px;bottom:24px;padding-left:40px}
+.card-bottom{left:-1px;bottom:24px}
+.pulse{background:#c9a968;box-shadow:0 0 0 4px rgba(201,169,104,.1)}
+.code-icon{font-family:"Noto Serif Thai",serif;font-size:24px;font-weight:400}
+
+.section-index{font-size:10px;letter-spacing:.28em;color:#c9a968}
+h2{font-size:clamp(42px,5vw,70px);font-weight:500;line-height:1.14}
+.about{background:#090d11}
+.about-layout{grid-template-columns:.8fr 1.2fr;gap:120px}
+.about-content .lead{font-size:clamp(23px,2.3vw,32px);color:#e7dfd2;line-height:1.7}
+.info-grid div{padding:23px 18px 23px 0}
+.info-grid strong{font-weight:400;color:#d8d1c5}
+.article-entry-link{margin-top:38px;padding-block:22px}
+
+.expertise,.portfolio,.achievement-section{background:#0c1015}
+.section-heading.horizontal{padding-bottom:34px;margin-bottom:52px;border-bottom:1px solid var(--line)}
+.skill-grid{gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.skill-card{min-height:340px;border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px;background:#0d1218}
+.skill-card.featured,.featured-achievement{background:linear-gradient(145deg,rgba(201,169,104,.08),transparent 48%),#0d1218}
+.skill-card:hover{transform:none;background:#111821}
+.skill-number{color:#a88e58;font-family:"Noto Serif Thai",serif;font-size:18px;font-weight:400}
+.skill-symbol{font-size:29px;margin-bottom:48px;color:#c9a968}
+.skill-card h3{font-size:26px}
+.skill-list{bottom:35px}
+.skill-list span{border:0;border-right:1px solid var(--line);padding:2px 10px;border-radius:0}
+.skill-list span:first-child{padding-left:0}
+
+.course-list{counter-reset:courses}
+.course{grid-template-columns:100px 1fr 40px;padding:30px 12px;counter-increment:courses}
+.course:before{content:"0" counter(courses);color:#9c8353;font-family:"Noto Serif Thai",serif;font-size:18px}
+.course-level{display:none}
+.course h3{font:400 23px "Noto Serif Thai",serif}
+.course:hover{padding-left:22px;background:linear-gradient(90deg,rgba(201,169,104,.06),transparent 56%)}
+
+.placeholder-grid{grid-template-columns:1.18fr .91fr .91fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.project-placeholder{border:0;background:#0c1117}
+.project-placeholder:hover{transform:none}
+.placeholder-visual{height:310px}
+.placeholder-visual img{filter:saturate(.68) contrast(1.05) brightness(.62)!important}
+.project-placeholder:hover .placeholder-visual img{filter:saturate(.85) contrast(1.02) brightness(.75)!important}
+.project-meta{min-height:210px;padding:30px}
+.project-meta h3{font-size:23px;margin-top:10px}
+.project-meta>span{letter-spacing:.25em}
+
+.cert-preview{background:#090c10}
+.cert-preview-grid{grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.cert-preview-card{border:0;border-radius:0;background:#0d1218}
+.cert-preview-card:hover{transform:none;background:#121923}
+.cert-preview-card img{height:250px;filter:saturate(.72) contrast(1.02);transition:.35s}
+.cert-preview-card:hover img{filter:saturate(1)}
+.cert-preview-card span{padding:19px 20px;color:#bbb4a8}
+
+.contact-card{border-radius:0;padding:78px;background:linear-gradient(120deg,rgba(201,169,104,.07),transparent 44%),#0d1218}
+.contact-links a,.location{padding-block:22px}
+footer{background:#07090c}
+.footer-content strong{font-family:"Noto Serif Thai",serif;font-weight:500}
+.footer-content a{border-radius:0}
+
+.subpage-main{padding-top:86px}
+.subpage-hero{position:relative;overflow:hidden;padding:112px 0 82px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 80% 25%,rgba(201,169,104,.11),transparent 32%),#090d12}
+.subpage-hero:after{content:"ARCHIVE";position:absolute;right:4vw;bottom:-.22em;color:rgba(201,169,104,.035);font:500 clamp(100px,19vw,300px) "Noto Serif Thai",serif;letter-spacing:-.08em;pointer-events:none}
+.subpage-hero h1{position:relative;z-index:1;font-size:clamp(58px,9vw,118px);line-height:1;margin:20px 0 24px;color:#eee7da}
+.subpage-hero p{position:relative;z-index:1}
+.achievement-grid{gap:1px;background:var(--line);border:1px solid var(--line)}
+.achievement-card{border:0;min-height:320px;padding:42px;background:#0d1218}
+.achievement-card:hover{transform:none;background:#111820}
+.achievement-card:after{display:none}
+.achievement-year{font:400 18px "Noto Serif Thai",serif}
+.achievement-kicker{letter-spacing:.25em;margin-bottom:45px}
+.achievement-card h3{font-size:27px}
+.activity-grid{grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
+.activity-card{border-radius:0;background:#090c10}
+.activity-card img{filter:saturate(.68);aspect-ratio:4/3}
+.activity-card:hover img{filter:saturate(.88) brightness(.66)}
+
+.certificate-category-nav{gap:1px;background:var(--line);border:1px solid var(--line)}
+.certificate-category-nav a{border:0;background:#0d1218;padding:28px 30px}
+.certificate-category-nav a:hover{background:#131a22}
+.certificate-grid{grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.certificate-card{border:0;border-radius:0;background:#0d1218}
+.certificate-card:hover{transform:none;background:#121820}
+.certificate-card img{filter:saturate(.7);transition:.3s}
+.certificate-card:hover img{filter:saturate(1)}
+.certificate-modal img,.activity-modal img{border-radius:0}
+
+.biography-main{background:#090c10}
+.biography-hero{padding:112px 0 84px;background:radial-gradient(circle at 80% 18%,rgba(201,169,104,.12),transparent 31%),#090d12}
+.biography-hero h1{font-size:clamp(68px,10vw,132px);line-height:.92}
+.biography-deck{max-width:850px}
+.biography-infobox{background:#0d1218}
+.biography-infobox img{filter:saturate(.7) contrast(1.04) brightness(.86)}
+.verification-panel{background:linear-gradient(135deg,rgba(201,169,104,.07),transparent 55%),#0d1218}
+
+@media(max-width:1000px){
+  .container{width:min(calc(100% - 44px),var(--max))}
+  .hero{min-height:auto;padding-top:128px}
+  .hero-layout{grid-template-columns:1fr 420px}
+  .hero-copy{padding-right:36px}
+  .hero h1{font-size:clamp(70px,10vw,108px)}
+  .portrait-wrap{min-height:630px}
+  .placeholder-grid{grid-template-columns:1fr 1fr}
+  .project-placeholder:first-child{grid-column:1 / -1}
+}
+@media(max-width:900px){
+  .nav-links{top:76px;border-radius:0;background:#0a0e13;border-color:var(--line)}
+  .hero:after{display:none}
+  .hero-layout{grid-template-columns:1fr}
+  .hero-copy{padding:45px 0 60px}
+  .portrait-wrap{width:100%;min-height:650px;border:1px solid var(--line)}
+  .about-layout{gap:55px}
+  .skill-grid{grid-template-columns:1fr 1fr}
+  .placeholder-grid{grid-template-columns:1fr 1fr}
+  .cert-preview-grid{grid-template-columns:1fr 1fr}
+  .contact-card{padding:52px}
+}
+@media(max-width:620px){
+  .container{width:min(calc(100% - 28px),var(--max))}
+  .section{padding:86px 0}
+  .brand-copy{display:none}
+  .hero{padding:104px 0 32px}
+  .hero-copy{padding:28px 0 48px}
+  .eyebrow{font-size:8px;letter-spacing:.22em;margin-bottom:28px}
+  .hero h1{font-size:clamp(64px,22vw,92px);margin-bottom:30px}
+  .hero-name{font-size:19px}
+  .hero-intro{font-size:17px}
+  .hero-actions{flex-direction:column}
+  .hero-tags{display:grid;grid-template-columns:1fr 1fr;gap:9px 0}
+  .hero-tags span{padding-left:0}
+  .portrait-wrap{min-height:510px;width:100%}
+  .portrait-wrap:before{right:18px;top:24px}
+  .card-top{right:12px;bottom:12px}
+  .card-bottom{display:none}
+  h2{font-size:40px}
+  .about-layout{gap:36px}
+  .about-content{padding-top:0}
+  .skill-grid{grid-template-columns:1fr}
+  .skill-card{min-height:330px;padding:30px}
+  .course{grid-template-columns:58px 1fr;padding:24px 0}
+  .course h3{font-size:19px}
+  .placeholder-grid,.cert-preview-grid{grid-template-columns:1fr}
+  .project-placeholder:first-child{grid-column:auto}
+  .placeholder-visual{height:250px}
+  .project-meta{min-height:auto}
+  .cert-preview-card img{height:auto;aspect-ratio:4/3}
+  .contact-card{padding:34px 24px}
+  .subpage-hero{padding:72px 0 54px}
+  .subpage-hero h1{font-size:52px}
+  .achievement-card{padding:30px;min-height:300px}
+  .activity-grid,.certificate-grid{grid-template-columns:repeat(2,1fr)}
+  .certificate-category-nav{grid-template-columns:1fr}
+  .biography-hero{padding:72px 0 54px}
+  .biography-hero h1{font-size:58px}
+}
