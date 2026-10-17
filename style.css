@@ -607,3 +607,43 @@ footer{background:#181818;border-color:#181818;color:#aaa49b}
   .activity-grid,.certificate-grid{grid-template-columns:1fr}
   .certificate-card span{font-size:11px}
 }
+
+/* Preserve the real character of the portrait and keep the full name together. */
+.hero h1{
+  white-space:nowrap;
+  overflow-wrap:normal;
+  font-size:clamp(58px,7.5vw,102px);
+  line-height:1;
+  letter-spacing:-.055em;
+}
+.portrait-frame img,
+.biography-infobox img{
+  filter:none;
+}
+.portrait-frame:after{
+  background:linear-gradient(135deg,rgba(114,27,33,.08),transparent 34%),linear-gradient(0deg,rgba(13,13,13,.08),transparent 34%);
+}
+.placeholder-visual img,
+.cert-preview-card img,
+.activity-card img,
+.certificate-card img{
+  filter:none!important;
+}
+.project-placeholder:hover .placeholder-visual img,
+.cert-preview-card:hover img,
+.activity-card:hover img,
+.certificate-card:hover img{
+  filter:saturate(1.04) brightness(.94)!important;
+}
+
+@media(max-width:900px){
+  .hero h1{font-size:clamp(62px,11vw,92px)}
+}
+
+@media(max-width:720px){
+  .hero h1{font-size:clamp(50px,13vw,76px)}
+}
+
+@media(max-width:360px){
+  .hero h1{font-size:46px}
+}
