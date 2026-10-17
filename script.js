@@ -7,12 +7,31 @@ window.addEventListener('scroll', () => header.classList.toggle('scrolled', wind
 menuButton.addEventListener('click', () => {
   const isOpen = navLinks.classList.toggle('open');
   menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuButton.setAttribute('aria-label', isOpen ? 'ปิดเมนู' : 'เปิดเมนู');
 });
 
 document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => {
   navLinks.classList.remove('open');
   menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.setAttribute('aria-label', 'เปิดเมนู');
 }));
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'เปิดเมนู');
+    menuButton.focus();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 1120 && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'เปิดเมนู');
+  }
+});
 
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
